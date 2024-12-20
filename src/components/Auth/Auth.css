@@ -1,0 +1,159 @@
+/* AuthForm.css */
+.auth-form-container {
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 20px 50px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  font-family: 'Arial', sans-serif;
+}
+
+h2 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+.input-container {
+  margin-bottom: 15px;
+}
+
+.label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 8px;
+  color: #555;
+}
+
+input {
+  width: 90%;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: border 0.3s ease;
+}
+
+input:focus {
+  outline: none;
+  border-color: #4caf50;
+}
+
+button.auth-button {
+  width: 100%;
+  padding: 12px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button.auth-button:hover {
+  background-color: #45a049;
+}
+
+.guest-button {
+  width: 100%;
+  padding: 12px;
+  background-color: #FF7EB3;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  margin-top: 15px;
+  transition: background-color 0.3s ease;
+}
+
+.guest-button:hover {
+  background-color: #FF5F8A;
+}
+
+.toggle-action {
+  text-align: center;
+  margin-top: 15px;
+  color: #555;
+}
+
+.toggle-action button {
+  background: none;
+  border: none;
+  color: #4caf50;
+  cursor: pointer;
+}
+
+.toggle-action button:hover {
+  text-decoration: underline;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Media Queries for Mobile Devices */
+@media (max-width: 768px) {
+  .auth-form-container {
+    padding: 20px 30px;
+    margin: 20px auto;
+    max-width: 90%;
+  }
+
+  h2 {
+    font-size: 22px;
+  }
+
+  .input-container input {
+    width: 100%;
+    font-size: 14px;
+  }
+
+  button.auth-button {
+    padding: 15px;
+    font-size: 18px;
+  }
+
+  .guest-button {
+    padding: 15px;
+    font-size: 18px;
+  }
+
+  .toggle-action {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .auth-form-container {
+    padding: 15px 20px;
+    margin: 10px auto;
+    max-width: 90%;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  .input-container input {
+    padding: 14px;
+    font-size: 14px;
+  }
+
+  button.auth-button {
+    padding: 18px;
+    font-size: 18px;
+  }
+
+  .guest-button {
+    padding: 18px;
+    font-size: 18px;
+  }
+
+  .toggle-action {
+    font-size: 12px;
+  }
+}

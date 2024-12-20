@@ -1,0 +1,81 @@
+/* ChatPage.css */
+
+/* Container for chat history */
+.chat-container {
+  display: flex;
+  flex-direction: column;
+  /* height: 500px; */
+  border: 1px solid #ddd;
+  padding: 10px;
+  overflow-y: auto;
+}
+
+/* Chat history container */
+.chat-history {
+  flex-grow: 1;
+  margin-bottom: 10px;
+}
+
+/* Individual chat message */
+.chat-history .user,
+.chat-history .bot {
+  margin: 5px 0;
+}
+
+/* Bot messages */
+.chat-history .bot p {
+  background-color: #f1f1f1;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+/* Input container */
+.chat-input {
+  display: flex;
+  align-items: center;
+}
+
+.chat-input input {
+  flex-grow: 1;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+}
+
+.chat-input button {
+  padding: 10px 20px;
+  margin-left: 10px;
+  background-color: #4389a2;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Typing indicator */
+.typing-indicator {
+  font-style: italic;
+  color: #888;
+  margin-top: 10px;
+  text-align: center;
+}
+
+/* Markdown formatted response */
+.response {
+  margin-top: 20px;
+}
+
+/* Button to copy code */
+button {
+  background-color: #5c258d;
+  color: white;
+  padding: 10px;
+  margin-top: 10px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: #4389a2;
+}

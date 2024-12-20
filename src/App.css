@@ -1,38 +1,147 @@
-.App {
+/* app.css */
+*{
+  margin: 0;
+  padding: 0;
+}
+.app-container {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  /* display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start; */
+}
+
+.app-header {
   text-align: center;
+  margin-bottom: 30px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.app-header h1 {
+  font-size: 2.5rem;
+  color: #4CAF50;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.app-header p {
+  font-size: 1.2rem;
+  color: #555;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.navigation {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  gap: 15px;
+}
+
+.nav-button {
+  background-color: #4CAF50;
   color: white;
+  padding: 12px 20px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 200px;
+  transition: background-color 0.3s;
 }
 
-.App-link {
-  color: #61dafb;
+.nav-button:hover {
+  background-color: #45a049;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.main-content {
+  margin-top: 30px;
+  width: 100%;
+}
+
+/* App.css */
+.app-container {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+.auth-button-container {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+  .contact-page {
+    padding-top: 30px; /* Adjust padding for mobile */
   }
-  to {
-    transform: rotate(360deg);
+
+  .banner-heading {
+    font-size: 2rem;
+  }
+
+  .banner-subheading {
+    font-size: 1.2rem;
+  }
+
+  .form-section {
+    padding: 30px;
+    width: 90%; /* Ensure the form takes up the full width */
+  }
+
+  .form {
+    gap: 15px; /* Reduce gap between form fields */
+  }
+
+  .input-group {
+    width: 100%; /* Full width inputs */
+  }
+
+  .input,
+  .textarea {
+    font-size: 1rem;
+    padding: 10px;
+  }
+
+  .submit-button {
+    padding: 12px 20px; /* Adjust button size for mobile */
+  }
+}
+
+/* Smaller mobile screens (Portrait phones) */
+@media (max-width: 480px) {
+  .banner-heading {
+    font-size: 1.8rem;
+  }
+
+  .banner-subheading {
+    font-size: 1rem;
+  }
+
+  .submit-button {
+    font-size: 1rem;
+    padding: 10px 18px;
+  }
+
+  .input,
+  .textarea {
+    font-size: 0.95rem; /* Reduce font size for smaller devices */
+  }
+
+  .form {
+    gap: 12px; /* Reduce gap between inputs */
+  }
+
+  .input-group {
+    width: 100%;
   }
 }

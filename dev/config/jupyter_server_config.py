@@ -2,23 +2,15 @@
 
 import os
 
-#################
-# Logging
-#################
 
 c.ServerApp.log_level = 'INFO'
 
-#################
-# Network
-#################
 
 c.ServerApp.ip = '0.0.0.0'
 c.ServerApp.port = 8686
 c.ServerApp.port_retries = 0
 
-#################
-# Browser
-#################
+
 
 c.ServerApp.open_browser = False
 
@@ -38,7 +30,9 @@ c.IdentityProvider.token = '60c1661cc408f978c309d04157af55c9588ff9557c9380e4fb50
 # Security
 #################
 
-c.ServerApp.disable_check_xsrf = False
+# c.ServerApp.disable_check_xsrf = False
+c.NotebookApp.disable_check_xsrf = True
+
 # ORIGIN = 'http://localhost:3208'
 ORIGIN = '*'
 # c.ServerApp.allow_origin = ORIGIN
@@ -62,9 +56,7 @@ c.IdentityProvider.cookie_options = {
   "Secure": True,
 }
 
-#################
-# Server Extensions
-#################
+
 
 c.ServerApp.jpserver_extensions = {
     'jupyterlab': False,
